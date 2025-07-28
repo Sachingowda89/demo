@@ -1,16 +1,82 @@
-
-<html >
+<html>
 <head>
     <title>My First Webpage</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        label {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 5px;
+            display: block;
+            text-align: left;
+        }
+    </style>
 </head>
 <body>
-	<h1> hi iam sachin </h1>
+  
 
-	<form action="">
-	enter username <input type="text"  name="user" >
-	enter password <input type="password"  name="pass" >
-	<input  type="submit" value="submit">
+    <form action="">
+        <label for="user">Enter username</label>
+        <input type="text" id="user" name="user">
+
+        <label for="pass">Enter password</label>
+        <input type="password" id="pass" name="pass">
+
+        <input type="submit" value="Submit">
     </form>
-	
- </body>
+</body>
 </html>
